@@ -1,6 +1,8 @@
 <template lang="pug">
-</template>
+div.intro_section
+  section
 
+</template>
 <script>
 export default {
   name: 'intro',
@@ -12,5 +14,16 @@ export default {
 </script>
 
 <style lang="sass">
+
+div.intro_section
+  height: 25px
+  width: 25px
+.button
+  height: 25px
+  width: 25px
+  blackground: pink
+
+input
+  background: white
 
 </style>

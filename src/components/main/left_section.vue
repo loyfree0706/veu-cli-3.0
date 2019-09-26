@@ -1,73 +1,5 @@
 <template lang="pug">
-section.left_section
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
-  p 135464
+div.left_section
 </template>
 
 <script>
@@ -86,9 +18,6 @@ export default {
   background-size: cover
   background-position: center
   background-repeat: no-repeat
-  background-attachment: fixed
-  width: 50%
+  // width: auto
   min-height: 100vh
-  margin: 0
-  padding: 0
 </style>

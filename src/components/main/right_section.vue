@@ -1,38 +1,44 @@
 <template lang="pug">
-section.right_section
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
-  p this is comment
+div.right_section
+  section
+    //- logo
+    img.logo(:src="logo")
+
+    //- title
+    h4 About Project
+    h1 {{title}}
+
+    //- text
+    p(v-for="items in paragraph") {{ items }}    
+    ul(v-for="items in describe") {{ items }}
+
 </template>
 
 <script>
-// import rightBg from '../../assets/images/home.jpg'
+import logo from "../../assets/images/logo_靠南清大.jpg";
 export default {
   name: "right_section",
   data() {
-    return {};
+    return {
+        logo: logo,
+        title: "幼兒園美感教育扎根計畫",
+        paragraph: [
+          "為延續國家重點政策發展方向─「美感教育從幼起」，並落實新頒佈之幼兒園教保活動課程大綱美感領域內涵，本計畫奠基於過去成果，整合大專校院夥伴教師之專業與教學動能，除連結既有的105所美感特色園，並協助各縣市建置美感基地園外；更為提升教保服務人員的美感素養，組織美感社群，形塑區域共學網絡。",
+          "透過「鷹架共學」、「區內共學」及「跨區共學」等方式，強化教保服務人員「美感課程」、「美感生活」、「美感環境」領域的美感經驗，並鼓勵其發展具「在地」和「校本」特色之美感教學實踐方案；另外，為協助縣市政府建立美感基地園，亦提供各縣市美感基地園遴選建議條件、諮詢專家人力資料庫與檢核機制，以支持美感基地園發展幼兒美感教育。",
+          "期許教保服務人員在參與共學與發展課程的歷程中，能逐步累積自身幼兒美感教育專業知能，培育幼兒美感教育人才庫，成為地方擴散美感教育的種子。綜合上述，本計畫具體執行策略如下：",
+          "為延續國家重點政策發展方向─「美感教育從幼起」，並落實新頒佈之幼兒園教保活動課程大綱美感領域內涵，本計畫奠基於過去成果，整合大專校院夥伴教師之專業與教學動能，除連結既有的105所美感特色園，並協助各縣市建置美感基地園外；更為提升教保服務人員的美感素養，組織美感社群，形塑區域共學網絡。",
+          "透過「鷹架共學」、「區內共學」及「跨區共學」等方式，強化教保服務人員「美感課程」、「美感生活」、「美感環境」領域的美感經驗，並鼓勵其發展具「在地」和「校本」特色之美感教學實踐方案；另外，為協助縣市政府建立美感基地園，亦提供各縣市美感基地園遴選建議條件、諮詢專家人力資料庫與檢核機制，以支持美感基地園發展幼兒美感教育。",
+          "期許教保服務人員在參與共學與發展課程的歷程中，能逐步累積自身幼兒美感教育專業知能，培育幼兒美感教育人才庫，成為地方擴散美感教育的種子。綜合上述，本計畫具體執行策略如下："
+        ],
+        describe: [
+          "推動教保服務人員美感共學社群：提升教保服務人員美感素養，強化其美感課程設計與實踐能力，鼓勵發展具在地特色的美感課程，建置多元跨域的課程示例。",
+          "陪伴縣市發展幼兒美感基地幼兒園：建立跨縣市、跨領域之專業輔導網絡。",
+          "協助縣市政府擴散幼兒美感教育成果：深化幼兒園課綱美感領域內涵，培養幼兒美感教育宣講人才，建立人力資料庫，擴散美感向下扎根成果。",
+          "推動教保服務人員美感共學社群：提升教保服務人員美感素養，強化其美感課程設計與實踐能力，鼓勵發展具在地特色的美感課程，建置多元跨域的課程示例。",
+          "陪伴縣市發展幼兒美感基地幼兒園：建立跨縣市、跨領域之專業輔導網絡。",
+          "協助縣市政府擴散幼兒美感教育成果：深化幼兒園課綱美感領域內涵，培養幼兒美感教育宣講人才，建立人力資料庫，擴散美感向下扎根成果。"
+        ],
+    };
   }
 };
 </script>
@@ -40,6 +46,17 @@ export default {
 <style lang="sass">
 .right_section
   text-align: center
-  margin: 0
-  padding: 0
+
+.logo
+//網頁版
+@media(min-width: 576px)
+  .logo
+    width: 150px
+    height: 150px
+//手機板
+@media(max-width: 575px)
+  .logo
+    width: 100px
+    height: 100px
+
 </style>
