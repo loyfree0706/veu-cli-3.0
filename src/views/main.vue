@@ -1,10 +1,7 @@
 <template lang="pug">
-//- div.row
-//-   div.col.col-md-6.col-12.left
-//-     left_section
-//-   div.col.col-md-6.col-12.right
-//-     right_section
 div
+  div.intro
+    intro_section
   div.left
     left_section
   div.right
@@ -17,7 +14,7 @@ div
 
 import left_section from '@/components/main/left_section.vue'
 import right_section from '@/components/main/right_section.vue'
-import intro_section from '@/components/main/intro.vue'
+import intro_section from '@/components/main/intro_section.vue'
 
 export default {
   name: 'Home',
