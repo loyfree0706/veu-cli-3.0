@@ -27,18 +27,36 @@ export default {
 </script>
 
 <style lang="sass">
-@media(max-width: 575.98px)
-  .left,
-  .right
-    width: 100%
 
-@media(min-width: 576px)
-  .left,
-  .right
-    width: 50%
+
+
+*
+  box-sizing: border-box
+body
+  overflow: hidden
+
+html,
+body
+  padding: 0
+  margin: 0
+
+.main
+  display: flex
+  overflow: hidden
+  height: 100vh
+  position: relative
+  width: 100%
+  backface-visibility: hidden
+  will-change: overflow
 
 ::-webkit-scrollbar
   display: none
+::-moz-selection
+  color: #1106CC
+  background: #FFFF99
+::selection
+  color: #1106CC
+  background: #FFFF99
 
 .left,
 .right
@@ -48,26 +66,18 @@ export default {
   -ms-overflow-style: none
   overflow: auto
   height: auto
-  padding: .5rem
 
-*
-  box-sizing: border-box
-body
-  overflow-x: hidden
-
-html,
-body
-  padding: 0
-  margin: 0
-  color: #ebebeb
-
-.main
-    display: flex
-    overflow: hidden
+@media(min-width: 576px)//表示視窗>576時
+  .left,
+  .right
     height: 100vh
-    position: relative
-    width: 100%
-    backface-visibility: hidden
-    will-change: overflow
+    width: 100vw
+
+@media(max-width: 575px)//表示視窗<575時
+  .left,
+  .right
+    height: 100vh
+    width: 100vw
+    display: block
 
 </style>

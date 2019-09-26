@@ -14,16 +14,5 @@ export default {
 </script>
 
 <style lang="sass">
-
-div.intro_section
-  height: 25px
-  width: 25px
-.button
-  height: 25px
-  width: 25px
-  blackground: pink
-
-input
-  background: white
-
+.intro_section
 </style>
