@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div.main
   div.intro
     intro_section
   div.left
@@ -17,7 +17,7 @@ import right_section from '@/components/main/right_section.vue'
 import intro_section from '@/components/main/intro_section.vue'
 
 export default {
-  name: 'Home',
+  name: 'main',
   components: {
     left_section,
     right_section,
@@ -28,23 +28,46 @@ export default {
 
 <style lang="sass">
 @media(max-width: 575.98px)
-  .left
-    width: 100%
+  .left,
   .right
     width: 100%
+
 @media(min-width: 576px)
-  .left
-    width: 50%
+  .left,
   .right
     width: 50%
 
 ::-webkit-scrollbar
   display: none
 
-.left
-  padding: 0
-  margin: 0
+.left,
 .right
   padding: 0
   margin: 0
+  -webkit-overflow-scrolling: touch
+  -ms-overflow-style: none
+  overflow: auto
+  height: auto
+  padding: .5rem
+
+*
+  box-sizing: border-box
+body
+  overflow-x: hidden
+
+html,
+body
+  padding: 0
+  margin: 0
+  color: #ebebeb
+
+.main
+    display: flex
+    overflow: hidden
+    height: 100vh
+    position: relative
+    width: 100%
+    backface-visibility: hidden
+    will-change: overflow
+
 </style>
