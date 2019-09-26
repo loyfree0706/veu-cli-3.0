@@ -28,12 +28,8 @@ export default {
 
 <style lang="sass">
 
-
-
 *
   box-sizing: border-box
-body
-  overflow: hidden
 
 html,
 body
@@ -42,42 +38,44 @@ body
 
 .main
   display: flex
-  overflow: hidden
-  height: 100vh
+  // height: 100vh
+  // width: 100%
   position: relative
-  width: 100%
   backface-visibility: hidden
   will-change: overflow
 
 ::-webkit-scrollbar
   display: none
-::-moz-selection
+
+::selection
   color: #1106CC
   background: #FFFF99
-::selection
+::-moz-selection
   color: #1106CC
   background: #FFFF99
 
 .left,
 .right
-  padding: 0
-  margin: 0
-  -webkit-overflow-scrolling: touch
-  -ms-overflow-style: none
-  overflow: auto
-  height: auto
+  height: 100vh
+  width: 100vw
+  // -webkit-overflow-scrolling: touch
+  // -ms-overflow-style: none
 
 @media(min-width: 576px)//表示視窗>576時
-  .left,
+  .left
+    overflow: hidden
   .right
-    height: 100vh
-    width: 100vw
+    overflow: auto
 
 @media(max-width: 575px)//表示視窗<575時
-  .left,
+  .main
+    display: block
+  .left
+    overflow: hidden
+    display: block
+
   .right
-    height: 100vh
-    width: 100vw
+    overflow: visible
     display: block
 
 </style>

@@ -15,4 +15,5 @@ export default {
 
 <style lang="sass">
 .intro_section
+  position: absolute
 </style>
