@@ -44,16 +44,6 @@ body
   backface-visibility: hidden
   will-change: overflow
 
-::-webkit-scrollbar
-  display: none
-
-::selection
-  color: #1106CC
-  background: #FFFF99
-::-moz-selection
-  color: #1106CC
-  background: #FFFF99
-
 .left,
 .right
   height: 100vh

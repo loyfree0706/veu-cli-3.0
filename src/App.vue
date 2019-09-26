@@ -14,5 +14,13 @@ export default {
 </script>
 
 <style lang="sass">
-  
+::-webkit-scrollbar
+  display: none
+
+::selection
+  color: #1106CC
+  background: #FFFF99
+::-moz-selection
+  color: #1106CC
+  background: #FFFF99
 </style>
