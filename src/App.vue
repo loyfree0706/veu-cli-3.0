@@ -16,7 +16,6 @@ export default {
 <style lang="sass">
 ::-webkit-scrollbar
   display: none
-
 ::selection
   color: #1106CC
   background: #FFFF99
