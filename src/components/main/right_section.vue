@@ -9,7 +9,7 @@ div.right_section
     h1 {{title}}
 
     //- text
-    p(v-for="items in paragraph") {{ items }}    
+    p(v-for="items in paragraph") {{ items }}
     ul(v-for="items in describe") {{ items }}
 
 </template>
